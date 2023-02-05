@@ -1,3 +1,16 @@
+# Laravel SWAPI
+The laravel swapi project is made with laravel in combination with laravel sail.
+
+To run the project:
+composer install
+cp .env.example .env
+vendor/bin/sail up
+vendor/bin/sail artisan migrate
+
+To import data from the SWAPI into the database
+vendor/bin/sail artisan swapi:import
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
